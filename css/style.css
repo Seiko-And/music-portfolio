@@ -101,6 +101,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 header h1{
     width: 100%;
@@ -116,16 +117,18 @@ nav{
     width: 100%;
     max-width: 1200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .navToggler:checked ~ ul{ display: block; } 
 .navToggler{ display: none;}
+.navToggler, .navTogglerMenu { align-self: end; }
 .navTogglerMenu{ 
-    display: flex;
     height: 100%;
-    align-items: center;
     width: 49px;
     margin: var(--spacer-dbl) 5%;
-    justify-self: flex-end;
 }
 .mi{ 
     color: #fff; 
