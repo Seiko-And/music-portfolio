@@ -7,6 +7,7 @@ console.log(isMobile);
 function menuTimer(){
 
   for (let subMenu of subMenus) {
+
     let timer;
     let link = subMenu.querySelector('a');
    
@@ -51,5 +52,4 @@ function menuTimer(){
 }
 menuTimer();
 
-
-
+window.addEventListener('resize', menuTimer);
