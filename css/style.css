@@ -124,7 +124,7 @@ nav{
 }
 .navToggler:checked ~ ul{ display: block; } 
 .navToggler{ display: none;}
-.navToggler, .navTogglerMenu { align-self: end; }
+.navToggler, .navTogglerMenu { align-self: start; }
 .navTogglerMenu{ 
     height: 100%;
     width: 49px;
