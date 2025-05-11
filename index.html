@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src="js/mainImage.js" defe></script>
 </head>
 <body>
     <header>
@@ -65,18 +66,5 @@
     <footer>
         
     </footer>
-    <script>
-        window.addEventListener('load', () => {
-          document.querySelectorAll('.circle').forEach((circle, i) => {
-            setTimeout(() => {
-              circle.classList.add('appear');
-            }, 300 + i * 150); 
-          });
-      
-          setTimeout(() => {
-            document.querySelector('.image-wrapper').classList.add('appear');
-          }, 500);
-        });
-      </script>
 </body>
 </html>
