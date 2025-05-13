@@ -1,7 +1,7 @@
 // --------------- SUB MENU TIMER ---------------------
 const subMenus = document.querySelectorAll('li.submenu');
 //  Screen size is less than 600px
-const isMobile = window.innerWidth < 600; 
+let isMobile = window.innerWidth < 600; 
 console.log(isMobile);
 
 function menuTimer(){
@@ -52,4 +52,6 @@ function menuTimer(){
 }
 menuTimer();
 
-window.addEventListener('resize', menuTimer);
+window.addEventListener('resize', () => {
+  location.reload(); 
+});

@@ -1,4 +1,7 @@
-window.addEventListener('load', () => {
+/*---------------------------------------------------
+    File name: mainImage.js
+    Animation for the main image on the home page
+----------------------------------------------------*/
     document.querySelectorAll('.circle').forEach((circle, i) => {
       setTimeout(() => {
         circle.classList.add('appear');
@@ -8,4 +11,3 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       document.querySelector('.image-wrapper').classList.add('appear');
     }, 500);
-  });
