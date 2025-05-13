@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <title>Iris's Music Portfolio - Original</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/menu.js"  defer></script>
 </head>
 <body>
     <header>
         <h1>Iris's Music Portfolio</h1>
-        <nav>
+        <nav aria-label="Main">
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <label for="navToggler" class="navTogglerMenu" name="navToggler">
+                <span class="material-symbols-outlined mi openMenu">menu</span>
+                <span class="material-symbols-outlined mi closeMenu">
+                    close
+                    </span>
+            </label>
             <ul class="navigation">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html" class="current">Home</a></li>
                 <li class="submenu">
-                    <a href="#">Music<i class="fa-solid fa-caret-down"></i></a>
+                    <a href="#" aria-expanded="false">
+                        Music<span class="material-symbols-outlined downArrow">arrow_drop_down</span>
+                    </a>
                     <ul>
                         <li><a href="pop.html">Pop</a></li>
                         <li><a href="musicaltheater.html">Musical Theater</a></li>
-                        <li><a href="original.html" class="current">Original</a></li>
+                        <li><a href="original.html">Original</a></li>
+                        
                     </ul>
                 </li>
                 <li><a href="profile.html">Profile</a></li>
@@ -24,7 +41,20 @@
         </nav>
     </header>
     <main>
-       
+       <h2>Original Music</h2>
     </main>
+    <footer>
+        <div class="snsIcons">
+            <p class="smlScreen">Please subscribe to my Youtube channel </p>
+            <p class="smlScreen"> and Follow me on Tiktok : </p> 
+            <p class="lgScreen">Please subscribe to my Youtube channel and Follow me on Tiktok : </p>
+            <a href="https://www.youtube.com/@airichacha">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

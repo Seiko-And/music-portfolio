@@ -359,6 +359,34 @@ footer i{
 }
 /* --------------------------- 7.LARGER SCREEN ---------------------------*/
 @media screen and (min-width: 600px){
+/* ------------- HEADER -------------------*/
+    header { 
+        border-bottom: var(--border);
+        padding: var(--spacer-thr) 0; 
+    }
+    header h1 { 
+        --fs-h1:6rem; 
+        font-size: var(--fs-h1);
+        border-bottom: none;
+    }
+    .navToggler, .navTogglerMenu,
+    .openMenu, .closeMenu { display: none;}
+    ul.navigation{
+        width: 80%;
+        max-width: 900px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation li{ border-bottom: none; width: 150px; height: 35px; }
+    .submenu { position: relative; }
+    .submenu ul{ 
+        position: absolute;
+        top: 35px;
+        width: 150px; 
+    }
+    
+
     footer p.smlScreen{ display: none;}
     footer p.lgScreen{ display: block; }
 }
