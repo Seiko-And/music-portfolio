@@ -52,6 +52,3 @@ function menuTimer(){
 }
 menuTimer();
 
-window.addEventListener('resize', () => {
-  location.reload(); 
-});
