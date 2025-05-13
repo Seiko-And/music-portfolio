@@ -62,7 +62,7 @@ table {
     --fs-h1: 2.4rem;
     --fs-h2: 1.8rem;
     --fs-menu: 1.8rem;
-    --fs-p: 1.4rem;
+    --fs-p: 1.6rem;
     --line-h: 1.5;
    /*---------colors-----------*/
    --primary-color:  #F5D7DA;
@@ -384,6 +384,7 @@ footer i{
         position: absolute;
         top: 35px;
         width: 150px; 
+        z-index: 1000;
     }
     
 

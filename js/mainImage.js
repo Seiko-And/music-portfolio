@@ -10,4 +10,4 @@
 
     setTimeout(() => {
       document.querySelector('.image-wrapper').classList.add('appear');
-    }, 500);
+    }, 100);
