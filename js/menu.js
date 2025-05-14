@@ -1,8 +1,13 @@
-// --------------- SUB MENU TIMER ---------------------
+/*---------------------------------------------------
+    File name: menu.js
+    Display the submenu and keeps it open for 1.5s 
+    after the user moves the mouse out
+----------------------------------------------------*/
+// li elements that have submenus
 const subMenus = document.querySelectorAll('li.submenu');
-//  Screen size is less than 600px
-let isMobile = window.innerWidth < 600; 
-console.log(isMobile);
+//  Screen size is less than 768px
+let isMobile = window.innerWidth < 768; 
+console.log(window.innerWidth);
 
 function menuTimer(){
 
@@ -10,27 +15,28 @@ function menuTimer(){
 
     let timer;
     let link = subMenu.querySelector('a');
-   
+
+    // Check if the screen width is less than 768px
     if (isMobile){
+      // If it is the mobile size, use click event 
       link.addEventListener('click', function() {
-        console.log(link);
-        console.log(subMenu);
+        // Check if the submenu is opened
         const isOpen = subMenu.classList.contains('open');
         if (isOpen){
           link.parentNode.classList.remove('open');
-          link.setAttribute('aria-expanded', 'false');
+          link.setAttribute('aria-expanded', 'false'); 
         }
         else if (!isOpen){
-          link.parentNode.classList.add('open');
+          link.parentNode.classList.add('open'); 
           link.setAttribute('aria-expanded', 'true');
         }
       });
-    }
+    } // If it is not mobile size, use mouseover event
     else{
       subMenu.addEventListener("mouseover", function() {
-        clearTimeout(timer);
-        subMenu.classList.add("open");
-    
+        clearTimeout(timer);  // Clear the timer
+        subMenu.classList.add("open");  
+        // If the submenu is opend
         if (link.parentNode.className == 'submenu open'){
           link.setAttribute('aria-expanded', 'true');
         }
