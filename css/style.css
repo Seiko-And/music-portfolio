@@ -111,7 +111,8 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* border-bottom: var(--border); */
+    justify-content: center;
+    align-items: center;
 }
 header h1{
     width: 100%;
@@ -185,6 +186,7 @@ main{
 /* --------- MAIN IMAGE --------- */
 main#home section{ 
     width: 100%;
+    max-width: 1000px;
 }
 #mainImage-frame{
     width: 90%;
@@ -386,7 +388,6 @@ footer i{
         width: 150px; 
         z-index: 1000;
     }
-    
 
     footer p.smlScreen{ display: none;}
     footer p.lgScreen{ display: block; }
